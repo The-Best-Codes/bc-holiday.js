@@ -11,7 +11,7 @@ Include the JS library in your HTML documents like this:
 Or use the URL to the file in the GitHub repo:
 
 ```html
-coming soon
+<script src="https://raw.githubusercontent.com/The-Best-Codes/bc-holiday.js/main/bc-holiday.js"></script>
 ```
 
 ### Get the holidays for the current day
