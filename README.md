@@ -1,3 +1,6 @@
+![bc-holiday_js_cropped](https://github.com/The-Best-Codes/bc-holiday.js/assets/106822363/1a626fbe-bdbb-43ff-b445-120256c474ee)
+
+
 # bc-holiday.js
 ## A compact JavaScript library that calculates the holidays for the current day or in a date range.
 ### ⚠️ bc-holiday.js is still in development! Please let me know in the `Issues` tab if you encounter any issues or would like holidays added to the list.
