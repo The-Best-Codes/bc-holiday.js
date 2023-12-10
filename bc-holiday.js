@@ -9,18 +9,15 @@
         '12-25': ['Christmas Day'],
         '12-31': ['New Year\'s Eve'],
         '11-11': ['Veterans Day'],
-        '09-05': ['Labor Day'], // First Monday in September
         '10-31': ['Halloween'],
         '03-17': ['St. Patrick\'s Day'],
         '02-14': ['Valentine\'s Day'],
-        '01-15': ['Martin Luther King Jr. Day'], // Third Monday in January
         '02-02': ['Groundhog Day'],
         '02-12': ['Lincoln\'s Birthday'],
         '02-22': ['Washington\'s Birthday'],
         '04-22': ['Earth Day'],
         '06-14': ['Flag Day'],
         '06-19': ['Juneteenth'],
-        '10-12': ['Columbus Day'], // Second Monday in October
         '11-01': ['All Saints\' Day'],
         '12-24': ['Christmas Eve'],
         // Add other fixed-date holidays here
@@ -67,6 +64,12 @@
         return variableHolidays;
     }
 
+    /**
+     * Calculates the date of Easter for a given year.
+     *
+     * @param {number} year - The year for which to calculate Easter.
+     * @return {Date} The date of Easter for the given year.
+     */
     function calculateEaster(year) {
         const f = Math.floor,
             // Golden Number - 1
@@ -86,6 +89,12 @@
         return new Date(year, month - 1, day);
     }
 
+    /**
+     * Retrieves the holidays that fall on a specific date.
+     *
+     * @param {Date} date - The date to check for holidays.
+     * @return {Array} An array of holidays on the given date.
+     */
     function getHolidaysOn(date) {
         const dateString = formatDate(date);
         const year = date.getFullYear();
@@ -99,6 +108,15 @@
         return holidays;
     }
 
+    /**
+     * Retrieves a list of holidays that fall within the given date
+     * range, and returns them as a JSON string. The holidays are
+     * grouped by date.
+     *
+     * @param {Date} startDate - The start date of the range.
+     * @param {Date} endDate - The end date of the range.
+     * @return {string} JSON string of holidays grouped by date.
+     */
     function getHolidaysInRange(startDate, endDate) {
         let currentDate = new Date(startDate.getTime());
         const holidaysInRange = {};
@@ -117,13 +135,19 @@
         return JSON.stringify(holidaysInRange);
     }
 
+    /**
+     * Converts a Date object to a string in MM-DD format.
+     *
+     * @param {Date} date - The date to format
+     * @return {string} The formatted date as a string
+     */
     function formatDate(date) {
         const month = (date.getMonth() + 1).toString().padStart(2, '0');
         const day = date.getDate().toString().padStart(2, '0');
         return `${month}-${day}`;
     }
 
-    // Expose the functions
+    // Expose the functions so that they can be used in other scripts
     window.bcHoliday = {
         getHolidaysOn: getHolidaysOn,
         getHolidaysInRange: getHolidaysInRange,
