@@ -138,7 +138,7 @@ _Example: Show the holidays for November on an HTML page_
 
 </details>
 
-## Other funcions and their usages
+## Other functions and their usages
 
 ### `formatDate(date)`
 
