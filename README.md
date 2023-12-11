@@ -29,6 +29,11 @@ const holidaysToday = bcHoliday.getHolidaysOn(new Date());
 console.log(holidaysToday);
 /*Write the days holidays to the console as an array*/
 ```
+
+```json
+[]
+```
+
 ### Get the holidays for a time period between two dates
 
 _Example: Get the holidays in November_
@@ -42,6 +47,10 @@ _Example: Get the holidays in November_
 const holidaysThisMonth = bcHoliday.getHolidaysInRange(new Date(2023, 10, 1), new Date(2023, 10, 30));
 console.log(holidaysThisMonth);
 /*Write the days holidays to the console as an array*/
+```
+
+```json
+{"11-01":["All Saints' Day"],"11-11":["Veterans Day"],"11-23":["Thanksgiving"]}
 ```
 
 _Example: Show the holidays for November on an HTML page_
