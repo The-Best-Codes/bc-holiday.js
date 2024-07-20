@@ -1,4 +1,4 @@
-![bc-holiday_js_cropped](https://github.com/The-Best-Codes/bc-holiday.js/assets/106822363/1a626fbe-bdbb-43ff-b445-120256c474ee)
+<img src="https://github.com/The-Best-Codes/bc-holiday.js/assets/106822363/1a626fbe-bdbb-43ff-b445-120256c474ee" alt="icon" for="cover" />
 
 
 # bc-holiday.js
