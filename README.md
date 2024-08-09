@@ -1,7 +1,7 @@
-# WARNING! This project has been sunsetted. Use the new version here to get the latest features and updates: https://github.com/The-Best-Codes/best-holiday
+# ⚠️ WARNING! This project has been sunsetted. Use the new version here to get the latest features and updates: https://github.com/The-Best-Codes/best-holiday ⚠️
 
 
-<img src="https://github.com/The-Best-Codes/bc-holiday.js/assets/106822363/1a626fbe-bdbb-43ff-b445-120256c474ee" alt="icon" for="cover" />
+<img src="https://github.com/The-Best-Codes/bc-holiday.js/assets/106822363/1a626fbe-bdbb-43ff-b445-120256c474ee" alt="icon" for="cover" width=240 />
 
 
 # bc-holiday.js
